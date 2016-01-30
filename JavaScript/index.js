@@ -282,7 +282,32 @@ $(document).mousedown(function(e){
         }
     }
 
+var xxl = true ;
+    $(".somework").click(function(){
+        var url = $(this).css("background");
+        var div = $("<div>")
+        div.css({"position":"fixed","height":"400px",width:"400px",top:"0",left:"0",right:"0",bottom:"0",margin:"auto",zIndex:"200",background:url,backgroundSize:"cover"});
+        div.appendTo("body");
+        div.click(function(){
+            var that = this ;
+            setTimeout(function(){
+                $(that).css("display","none");
+            },0)
+        })
+    })
 
+    $(".col span").click(function(){
+        var url = $(this).css("background");
+        var div = $("<div>")
+        div.css({"position":"fixed","height":"400px",width:"400px",borderRadius:"50%",top:"0",left:"0",right:"0",bottom:"0",margin:"auto",zIndex:"200",background:url,backgroundSize:"cover"});
+        div.appendTo("body");
+        div.click(function(){
+            var that = this ;
+            setTimeout(function(){
+                $(that).css("display","none");
+            },0)
+        })
+    })
 
 
 })
