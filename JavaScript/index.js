@@ -32,6 +32,8 @@ $(function(){
     });
     $(".m-left").click(function(){
         bugs = $(this).index(".m-left");
+        $(".m-left").removeClass("bor");
+        $(this).addClass("bor");
         $(".swiper-container").css({transform:"translate3d(0,-"+bugs*hei+"px,0)"})
     })
     $(".meau").click(function(){
@@ -43,10 +45,7 @@ $(function(){
        $(".work").css("display","none");
         $($(".work")[pub]).fadeIn();
     });
-    setInterval(function(){
-        $(".m-left").removeClass("bor");
-        $($(".m-left")[bugs]).addClass("bor");
-    },200);
+
     $(".tos").click(function(){
 
         $(".swiper-container").css({transform:"translate3d(0,-"+0+"px,0)"})
@@ -92,6 +91,14 @@ $(function(){
 //调用方式：---------------------------------------------
     var topx= $(".swiper-slide").height();
     $(".swiper-container").css({transition:"transform .4s linear"});
+    $(".tos").click(function(){
+        $(".m-left").removeClass("bor");
+        $($(".m-left")[0]).addClass("bor");
+        $(".meau").removeClass("bor");
+        $($(".meau")[0]).addClass("bor");
+        $(".swiper-container").css({transform:"translate3d(0,0,0)"});
+    })
+
  $('.swiper-slide').mouseWheel(function(){
      $(".chao").css("display","none");
      setTimeout(function(){
@@ -100,6 +107,10 @@ $(function(){
              index=0;
          }
           topv = index*topx ;
+         $(".m-left").removeClass("bor");
+         $($(".m-left")[index]).addClass("bor");
+         $(".meau").removeClass("bor");
+         $($(".meau")[index]).addClass("bor");
          $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
          return topv;
      },0)
@@ -111,6 +122,10 @@ $(function(){
              index=4;
          }
           topv = index*topx ;
+         $(".m-left").removeClass("bor");
+         $($(".m-left")[index]).addClass("bor");
+         $(".meau").removeClass("bor");
+         $($(".meau")[index]).addClass("bor");
          $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
          return topv;
      },10)
@@ -123,6 +138,10 @@ $(function(){
                 index=0;
             }
             topv = index*topx ;
+            $(".m-left").removeClass("bor");
+            $($(".m-left")[index]).addClass("bor");
+            $(".meau").removeClass("bor");
+            $($(".meau")[index]).addClass("bor");
             $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
             return topv;
         }else if(e.keyCode == 39 || e.keyCode ==40){
@@ -131,6 +150,10 @@ $(function(){
                 index=4;
             }
             topv = index*topx ;
+            $(".m-left").removeClass("bor");
+            $($(".m-left")[index]).addClass("bor");
+            $(".meau").removeClass("bor");
+            $($(".meau")[index]).addClass("bor");
             $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
             return topv;
         }
@@ -152,6 +175,10 @@ $(function(){
                     index=0;
                 }
                 topv = index*topx ;
+                $(".meau").removeClass("bor");
+                $($(".meau")[index]).addClass("bor");
+                $(".m-left").removeClass("bor");
+                $($(".m-left")[index]).addClass("bor");
                 $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
             }else if(e.direction=='up'){
                 index++;
@@ -159,12 +186,20 @@ $(function(){
                     index=4;
                 }
                 topv = index*topx ;
+                $(".meau").removeClass("bor");
+                $($(".meau")[index]).addClass("bor");
+                $(".m-left").removeClass("bor");
+                $($(".m-left")[index]).addClass("bor");
                 $(".swiper-container").css({transform:"translate3d(0,-"+topv+"px,0)"});
             }
         }else{
            return ;
         }
     });
+    $(".meau").removeClass("bor");
+    $($(".meau")[0]).addClass("bor");
+    $(".m-left").removeClass("bor");
+    $($(".m-left")[0]).addClass("bor");
 //字体变大
 //    for(var i= 0 ; i < $(".skiller .col").length ;i++){
 //        $($(".skiller .col")[0]).css({"transform":"translate3d(300px,0,0) rotateX()"})
@@ -180,7 +215,7 @@ $(function(){
         $(".work").css("display","none");
         $(".worksome").css("display","block");
         gg++;
-        if(gg==5){
+        if(gg==11){
             gg=0;
         }
         $(".worksome .somework").css("display","none");
@@ -191,7 +226,7 @@ $(function(){
         $(".worksome").css("display","block");
         gg--;
         if(gg==-1){
-            gg=4;
+            gg=11;
         }
         $(".worksome .somework").css("display","none");
         $($(".worksome .somework")[gg]).fadeIn();
