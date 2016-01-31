@@ -283,7 +283,7 @@ $(document).mousedown(function(e){
     }
 
 var xxl = true ;
-    $(".somework").click(function(){
+    $(".jinxin").click(function(){
         var url = $(this).css("background");
         var div = $("<div>")
         div.css({"position":"fixed","height":"400px",width:"400px",top:"0",left:"0",right:"0",bottom:"0",margin:"auto",zIndex:"200",background:url,backgroundSize:"cover"});
