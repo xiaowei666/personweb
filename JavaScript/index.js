@@ -309,6 +309,9 @@ var xxl = true ;
         })
     })
 
+    $("a").attr({target:"_blank"});
+    alert($("a").length);
+
 
 })
 
