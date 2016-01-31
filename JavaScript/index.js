@@ -310,8 +310,34 @@ var xxl = true ;
     })
 
     $("a").attr({target:"_blank"});
-    alert($("a").length);
+    $(".row").css({position:"relative",height:"100%"})
+    $(".kuang").css({display:"none",position:"absolute",top:0,left:0,right:0,bottom:0,margin:"auto"});
+    $( $(".kuang")[0]).css("display","block");
+    var hubs = 0 ;
+    setInterval(function(){
+        $(".kuang").css({display:"none"});
+        $($(".kuang")[hubs]).fadeIn();
+        $(".lll").removeClass("oran");
+        $($(".lll")[hubs]).addClass("oran");
+        hubs++;
+        if(hubs==4){
+            hubs=0;
+        }
+    },2000)
+    for(var i = 0 ; i < 4 ; i++){
+        $($(".lll")[i]).css("left",i*20+"px");
 
+    }
+    for(var i = 0 ; i < 4 ; i++ ){
+        $($(".lll")[i]).click(function(){
+            setTimeout(function(){
+                $(".lll").removeClass("oran");
+                $(this).addClass("oran");
 
+                $(".kuang").css({display:"none"});
+                $($(".kuang")[i]).fadeIn();
+            },0)
+        })
+    }
 })
 

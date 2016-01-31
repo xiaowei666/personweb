@@ -537,6 +537,9 @@ header {
   .masa {
     display: none;
   }
+  .teach{
+    text-align: right;
+  }
 }
 .white {
   background: #fff;
@@ -627,6 +630,18 @@ header {
   .masa {
     display: none;
   }
+  .teach{
+    text-align: right;
+  }
+}
+.lll{
+  height:6px;
+  width:6px;
+  background: #fff;
+  border-radius: 50%;
+}
+.oran{
+  background: orange;
 }
 .bor {
   border-bottom: 4px solid white;
