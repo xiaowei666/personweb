@@ -34,12 +34,25 @@ $(function(){
         bugs = $(this).index(".m-left");
         $(".m-left").removeClass("bor");
         $(this).addClass("bor");
-        $(".swiper-container").css({transform:"translate3d(0,-"+bugs*hei+"px,0)"})
-    })
-    $(".meau").click(function(){
-        bugs = $(this).index(".meau");
+        $(".meau").removeClass("bor");
+        $($(".meau")[bugs]).addClass("bor");
         $(".swiper-container").css({transform:"translate3d(0,-"+bugs*hei+"px,0)"})
     });
+    $(".meau").click(function(){
+        bugs = $(this).index(".meau");
+        $(".meau").removeClass("bor");
+        $(this).addClass("bor");
+        $(".m-left").removeClass("bor");
+        $($(".m-left")[bugs]).addClass("bor");
+        $(".swiper-container").css({transform:"translate3d(0,-"+bugs*hei+"px,0)"})
+    });
+    $(".logo").click(function(){
+        $(".m-left").removeClass("bor");
+        $($(".m-left")[0]).addClass("bor");
+        $($(".meau")[0]).addClass("bor");
+        $(".swiper-container").css({transform:"translate3d(0,-"+0+"px,0)"})
+    })
+
     $(".mean-son").click(function(){
         var pub = $(this).index(".mean-son") ;
        $(".work").css("display","none");
@@ -50,10 +63,7 @@ $(function(){
 
         $(".swiper-container").css({transform:"translate3d(0,-"+0+"px,0)"})
     })
-    $(".logo").click(function(){
 
-        $(".swiper-container").css({transform:"translate3d(0,-"+0+"px,0)"})
-    })
     //somework 样式
     //下滑
     //
@@ -239,16 +249,16 @@ $(function(){
         if(pp==3){
             pp=0;
         }
-        var ds = 200;
-        $(".tuopan").css("margin-left",-pp*200+"px");
+        var ds = 150;
+        $(".tuopan").css("margin-left",-pp*150+"px");
     })
     $("#right").click(function(){
         pp--;
         if(pp==-1){
             pp=2;
         }
-        var ds = 200;
-        $(".tuopan").css("margin-left",-pp*200+"px");
+        var ds = 150;
+        $(".tuopan").css("margin-left",-pp*150+"px");
     })
 
     //------------------
@@ -314,6 +324,8 @@ var xxl = true ;
     $(".kuang").css({display:"none",position:"absolute",top:0,left:0,right:0,bottom:0,margin:"auto"});
     $( $(".kuang")[0]).css("display","block");
     var hubs = 0 ;
+    $(".kuang").css({display:"none"});
+    $($(".kuang")[2]).css({display:"block"});
     setInterval(function(){
         $(".kuang").css({display:"none"});
         $($(".kuang")[hubs]).fadeIn();
@@ -323,6 +335,7 @@ var xxl = true ;
         if(hubs==4){
             hubs=0;
         }
+
     },2000)
     for(var i = 0 ; i < 4 ; i++){
         $($(".lll")[i]).css("left",i*20+"px");

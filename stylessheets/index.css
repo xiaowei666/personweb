@@ -229,8 +229,13 @@ header {
   background: #123;
   color: #fff;
   border-radius: 10px;
-  box-shadow: 5px 5px 2px #fafafa;
   float: left;
+  transition:all 1s ease ;
+}
+.mean-son:hover{
+  background: #000;
+  color:#fff;
+  font-weight: 500;
 }
 .email {
   width: 80%;
@@ -341,12 +346,28 @@ header {
     font-weight: 600;
     color: #000;
   }
+  .about-me > .row > [class*=col] div:nth-child(1) {
+
+    text-align: center;
+
+  }
+  .about-me > .row > [class*=col] div:nth-child(3) {
+
+    text-align: center;
+
+  }
+  .about-me > .row > [class*=col] div:nth-child(4) {
+
+    text-align: center;
+
+  }
   .left-head {
     display: none;
   }
   .teach {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
   .work {
     height: 60%;
@@ -409,12 +430,12 @@ header {
     margin-top: 25px;
   }
   .skiller {
-    width: 200px;
+    width: 150px;
     height: 450px;
   }
   .col {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   .col span {
     width: 100%;
@@ -481,6 +502,16 @@ header {
   .about-me > .row > [class*=col]:nth-child(1) {
     margin-top: 100px;
   }
+  .about-me > .row > [class*=col]:nth-child(2) {
+    margin-top: 100px;
+  }
+  .about-me > .row > [class*=col]:nth-child(3) {
+     margin-top: 100px;
+   }
+  .about-me > .row > [class*=col]:nth-child(4) {
+      margin-top: 100px;
+    }
+
   .work {
     height: 80%;
     width: 80%;
@@ -538,8 +569,8 @@ header {
     display: none;
   }
   .teach{
-    text-align: right;
-  }
+     text-align: right;
+   }
 }
 .white {
   background: #fff;
@@ -572,6 +603,15 @@ header {
     margin: 0 auto;
   }
   .about-me > .row > [class*=col]:nth-child(1) {
+    margin-top: 100px;
+  }
+  .about-me > .row > [class*=col]:nth-child(2) {
+    margin-top: 100px;
+  }
+  .about-me > .row > [class*=col]:nth-child(3) {
+    margin-top: 100px;
+  }
+  .about-me > .row > [class*=col]:nth-child(4) {
     margin-top: 100px;
   }
   .work {
@@ -647,7 +687,7 @@ header {
   border-bottom: 4px solid white;
 }
 .jian {
-  opacity: 0.1;
+  opacity: 0.8;
 }
 .jian:hover {
   opacity: 0.6;
