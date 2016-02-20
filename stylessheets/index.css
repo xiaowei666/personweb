@@ -11,15 +11,6 @@ h6 {
   margin: 0;
   padding: 0;
 }
-.wwe{
-  width:20%;
-  height:100%;
-  float:left;
-  line-height: 80px;
-  background: #222222;
-  border: 1px solid #fafafa;
-  transition:all .6s ease;
-}
 ul,
 li {
   list-style: none;
@@ -486,7 +477,6 @@ header {
 .jian {
   z-index: 200;
 }
-
 @media screen and (min-width: 730px) and (max-width: 1070px) {
   .hanxu {
     text-align: center;
@@ -685,8 +675,8 @@ header {
   }
 }
 .lll{
-  height:10px;
-  width:10px;
+  height:6px;
+  width:6px;
   background: #fff;
   border-radius: 50%;
 }
@@ -1831,124 +1821,4 @@ header {
   .container-fluid > .row > .col-l-h {
     display: none;
   }
-}
-.zhazha{text-align: left;margin:10px auto;font-size: 24px;color:#fff;}
-.banan{
-  height:100%;
-  width:60%;
-  text-align: center;margin:10px auto;font-size: 24px;color:#fff;
-  border:1px solid #fff;
-  position:relative;
-  top:0;left:0;right:0;bottom:0;
-  margin: auto ;
-}
-.jishu{
-  margin:10px auto;
-  border-bottom: 1px solid #fff;
-  text-align: left;
-  font-size: 18px;
-  width:80%;
-}
-.jishu:before,
-.jishu:after {
-  content: "";
-  display: block;
-}
-.jishu:after {
-  clear: both;
-}
-.jishu a{
-  display: block;
-  float:left;
-  font-size:20px;
-  font-weight: 700;
-  line-height: 48px;
-  color:#fff;
-}
-.xinxi{
-  width:80px;
-  color:#fff;
-}
-.juqing .logo{
-  height:100px;width:100px;
-  margin:60px auto;
-  background-size: cover;
-}
-.juqing input{
-  height:60px ;width:80%;
-  display: block;
-  margin:0 auto ;
-
-}
-.sk-i{
-  height:100px;
-  margin-top:10px;
-}
-.ski-s{
-  position:relative;
-  top:0;left:0;right:0;bottom:0;
-  margin:auto;
-  background: #fafafa;
-  height:100px;width:100px;
-  border-radius: 50%;
-  text-align: center;
-  border:6px solid #fff;
-  background: none;
-  color:#fff;
-transition:all .6s ease;
-}
-.ski-s:hover{
-  background: #332;
-  border-color:#333;
-}
-@media screen and (max-width: 730px) {
-  .zhazha{width:90%}
-  .asdww{display: none;}
-  .banan{width:96%;}
-  .xxxsx{
-    display: none;
-  }
-  .sk-i{
-    height:160px;
-    width: 160px;
-    margin-top:10px;
-  }
-  .ski-s{
-    height:160px;width:160px;
-    line-height: 154px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-}
-@media screen and (min-width: 730px) and (max-width: 1070px) {
-  .zhazha{width:80%}
-  .sk-i{
-    height:100px;
-    margin-top:10px;
-  }
-  .ski-s{
-    height:100px;width:100px;
-    line-height: 96px;
-  }
-}
-@media screen and (min-width:1070px){
-  .zhazha{width:50%}
-  .sk-i{
-    height:100px;
-    width:100px;
-    margin-top:10px;
-  }
-  .ski-s{
-    height:100px;width:100px;
-    line-height: 96px;
-  }
-
-}
-.xiaomi{
-
-  margin: 0 40px;
-  height:200px;
-  width:200px;
 }
