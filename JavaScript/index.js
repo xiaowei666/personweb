@@ -250,7 +250,8 @@ $(function(){
             pp=0;
         }
         var ds = 150;
-        $(".tuopan").css("margin-left",-pp*150+"px");
+        $(".sk-i").css("display","none");
+        $(".sk"+pp).css("display","block");
     })
     $("#right").click(function(){
         pp--;
@@ -258,7 +259,8 @@ $(function(){
             pp=2;
         }
         var ds = 150;
-        $(".tuopan").css("margin-left",-pp*150+"px");
+        $(".sk-i").css("display","none");
+        $(".sk"+pp).css("display","block");
     })
 
     //------------------
